@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ProcessMemoryLab.Browser/ProcessMemoryLab.Browser.csproj" />
+  <Project Path="ProcessMemoryLab.Desktop/ProcessMemoryLab.Desktop.csproj" />
+  <Project Path="ProcessMemoryLab/ProcessMemoryLab.csproj" />
+</Solution>

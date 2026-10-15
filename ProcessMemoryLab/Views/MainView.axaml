@@ -1,0 +1,7 @@
+<UserControl xmlns="https://github.com/avaloniaui" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:vm="using:ProcessMemoryLab.ViewModels" mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="620" x:Class="ProcessMemoryLab.Views.MainView" x:DataType="vm:MainViewModel">
+  <ScrollViewer><StackPanel Margin="28" Spacing="18" MaxWidth="850" HorizontalAlignment="Center">
+    <TextBlock Text="Process &amp; Memory Lab" FontSize="30" FontWeight="Bold"/><TextBlock Text="Veja escalonamento Round Robin e alocação Best Fit em uma única simulação." Opacity="0.75"/>
+    <Border Padding="18" CornerRadius="10" Background="#E2E8F0"><StackPanel Spacing="10"><TextBlock Text="Processos: P1 (5), P2 (3), P3 (4) · chegadas em 0, 1 e 2"/><StackPanel Orientation="Horizontal" Spacing="10"><TextBlock Text="Quantum" VerticalAlignment="Center"/><NumericUpDown Value="{Binding Quantum}" Minimum="1" Maximum="8" Width="90"/><Button Content="Executar simulação" Command="{Binding SimulateCommand}"/></StackPanel></StackPanel></Border>
+    <Border Padding="18" CornerRadius="10" Background="#F1F5F9"><TextBlock Text="{Binding Result}" FontFamily="monospace" TextWrapping="Wrap"/></Border>
+  </StackPanel></ScrollViewer>
+</UserControl>
