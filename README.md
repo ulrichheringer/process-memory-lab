@@ -1,21 +1,23 @@
 # process-memory-lab
 
-Simula escalonamento Round Robin e alocação Best Fit com fragmentação externa.
+Compare Round Robin CPU scheduling with Best Fit memory allocation. The app shows the schedule and free memory blocks, including external fragmentation.
 
-## Desktop
+## Run
 
-```sh
+Requires the .NET 10 SDK. Browser builds also need the WebAssembly workload: `dotnet workload install wasm-tools`.
+
+### Desktop
+
+~~~sh
 dotnet run --project ProcessMemoryLab.Desktop/ProcessMemoryLab.Desktop.csproj
-```
+~~~
 
-## Browser
+### Browser
 
-Requer o workload wasm-tools do .NET 10.
-
-```sh
+~~~sh
 dotnet run --project ProcessMemoryLab.Browser/ProcessMemoryLab.Browser.csproj
-```
+~~~
 
-## Exemplo
+## Example
 
-Altere o quantum e execute a simulação para comparar a linha do tempo e os blocos livres.
+Change the time slice, run the simulation, and compare the CPU timeline and free memory blocks.
